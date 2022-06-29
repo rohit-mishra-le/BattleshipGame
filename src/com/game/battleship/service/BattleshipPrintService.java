@@ -24,8 +24,8 @@ public class BattleshipPrintService implements PrintService{
 			output[0]+="| "+ index[0]+ "\n"+ rowSeparator[0];
 		});
 		rowSeparator[0] = "";
-		for(int i=positionMap[0].length; i>0; i++) {
-			output[0]+= " "+ i +" ";
+		for(int i=positionMap[0].length; i>0; i--) {
+			output[0]+= "  "+ i +" ";
 		}
 		System.out.print(output[0]);
 	}
